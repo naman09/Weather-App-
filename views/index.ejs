@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>WEATHER</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div>
+            <div id="inside">
+                <form action="/" method="post">
+                    <input type="text" name="city" placeholder="Enter a city">
+                    <br><br>
+                    <input type="submit" value="Get Weather">
+                </form>
+                <%if(weather!=null){%>
+                    <p><%=weather%></p> 
+                <%}%>
+                <%if(error!=null){%>
+                    <p><%=error%></p> 
+                <%}%> 
+            </div>
+        </div>
+    </body>
+</html>
